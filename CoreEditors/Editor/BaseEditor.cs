@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BaseEditor : EditorWindow
 {
-	int value = 0;
+	int value = 100;
 
 	[MenuItem("Animmersion/BaseEditor")]
 	public static void ShowWindow()
@@ -17,7 +17,7 @@ public class BaseEditor : EditorWindow
 	{
 		if (GUILayout.Button(string.Format("Test Button: {0}", value)))
 		{
-			value++;
+			value--;
 		}
 	}
 }
